@@ -1,0 +1,911 @@
+{
+ "id": "bb_hu_vs_limp_15plus",
+ "name": "BB vs SB limp 15+",
+ "position": "BB",
+ "spot": "VS_LIMP",
+ "game": "SPIN_3MAX_HU",
+ "stack_range": "15+",
+ "tags": [
+  "BB",
+  "HU",
+  "VS SB",
+  "LIMP",
+  "DEEP (15+ BBS)"
+ ],
+ "actions": {
+  "CHECK": {
+   "label": "Check",
+   "color": "#FFD370",
+   "hotkey": "C"
+  },
+  "ISO_AI": {
+   "label": "ISO All-In",
+   "color": "#22C55E",
+   "hotkey": "A"
+  },
+  "ISO": {
+   "label": "ISO (no all-in)",
+   "color": "#7CC8D6",
+   "hotkey": "R",
+   "has_followup": true
+  }
+ },
+ "followups": {
+  "CALL_AI": {
+   "label": "Call AI",
+   "color": "#7CC8D6",
+   "vs_3bet_ai": "CALL"
+  },
+  "FOLD": {
+   "label": "Fold",
+   "color": "#E85A5A",
+   "vs_3bet_ai": "FOLD"
+  }
+ },
+ "followup_notes": "ISO (no all-in): si el SB responde con 3bet all-in, hero paga (Call AI, celeste) o foldea (rojo).",
+ "reference_stats": {
+  "check_pct": 72,
+  "iso_all_in_pct": 16,
+  "iso_non_all_in_pct": 12,
+  "iso_non_all_in": {
+   "vs_3bet": {
+    "fold": 45,
+    "call": 55
+   }
+  }
+ },
+ "_check": {
+  "ISO_CALL_AI": 6.6,
+  "ISO_AI": 16.4,
+  "ISO_FOLD": 5.4,
+  "CHECK": 71.5
+ },
+ "confidence_notes": "Alta: combos coinciden con la captura.",
+ "hands": {
+  "AA": {
+   "action": "ISO",
+   "followup": "CALL_AI",
+   "color": "#7CC8D6"
+  },
+  "AKs": {
+   "action": "ISO",
+   "followup": "CALL_AI",
+   "color": "#7CC8D6"
+  },
+  "AQs": {
+   "action": "ISO",
+   "followup": "CALL_AI",
+   "color": "#7CC8D6"
+  },
+  "AJs": {
+   "action": "ISO",
+   "followup": "CALL_AI",
+   "color": "#7CC8D6"
+  },
+  "ATs": {
+   "action": "ISO",
+   "followup": "CALL_AI",
+   "color": "#7CC8D6"
+  },
+  "A9s": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "A8s": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "A7s": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "A6s": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "A5s": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "A4s": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "A3s": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "A2s": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "AKo": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "KK": {
+   "action": "ISO",
+   "followup": "CALL_AI",
+   "color": "#7CC8D6"
+  },
+  "KQs": {
+   "action": "ISO",
+   "followup": "CALL_AI",
+   "color": "#7CC8D6"
+  },
+  "KJs": {
+   "action": "ISO",
+   "followup": "CALL_AI",
+   "color": "#7CC8D6"
+  },
+  "KTs": {
+   "action": "ISO",
+   "followup": "CALL_AI",
+   "color": "#7CC8D6"
+  },
+  "K9s": {
+   "action": "ISO",
+   "followup": "FOLD",
+   "color": "#E85A5A"
+  },
+  "K8s": {
+   "action": "ISO",
+   "followup": "FOLD",
+   "color": "#E85A5A"
+  },
+  "K7s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "K6s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "K5s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "K4s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "K3s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "K2s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "AQo": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "KQo": {
+   "action": "ISO",
+   "followup": "CALL_AI",
+   "color": "#7CC8D6"
+  },
+  "QQ": {
+   "action": "ISO",
+   "followup": "CALL_AI",
+   "color": "#7CC8D6"
+  },
+  "QJs": {
+   "action": "ISO",
+   "followup": "CALL_AI",
+   "color": "#7CC8D6"
+  },
+  "QTs": {
+   "action": "ISO",
+   "followup": "CALL_AI",
+   "color": "#7CC8D6"
+  },
+  "Q9s": {
+   "action": "ISO",
+   "followup": "FOLD",
+   "color": "#E85A5A"
+  },
+  "Q8s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q7s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q6s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q5s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q4s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q3s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q2s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "AJo": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "KJo": {
+   "action": "ISO",
+   "followup": "FOLD",
+   "color": "#E85A5A"
+  },
+  "QJo": {
+   "action": "ISO",
+   "followup": "FOLD",
+   "color": "#E85A5A"
+  },
+  "JJ": {
+   "action": "ISO",
+   "followup": "CALL_AI",
+   "color": "#7CC8D6"
+  },
+  "JTs": {
+   "action": "ISO",
+   "followup": "CALL_AI",
+   "color": "#7CC8D6"
+  },
+  "J9s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J8s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J7s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J6s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J5s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J4s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J3s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J2s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "ATo": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "KTo": {
+   "action": "ISO",
+   "followup": "FOLD",
+   "color": "#E85A5A"
+  },
+  "QTo": {
+   "action": "ISO",
+   "followup": "FOLD",
+   "color": "#E85A5A"
+  },
+  "JTo": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "TT": {
+   "action": "ISO",
+   "followup": "CALL_AI",
+   "color": "#7CC8D6"
+  },
+  "T9s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T8s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T7s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T6s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T5s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T4s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T3s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T2s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "A9o": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "K9o": {
+   "action": "ISO",
+   "followup": "FOLD",
+   "color": "#E85A5A"
+  },
+  "Q9o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J9o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T9o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "99": {
+   "action": "ISO",
+   "followup": "CALL_AI",
+   "color": "#7CC8D6"
+  },
+  "98s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "97s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "96s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "95s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "94s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "93s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "92s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "A8o": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "K8o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q8o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J8o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T8o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "98o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "88": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "87s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "86s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "85s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "84s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "83s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "82s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "A7o": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "K7o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q7o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J7o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T7o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "97o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "87o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "77": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "76s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "75s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "74s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "73s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "72s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "A6o": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "K6o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q6o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J6o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T6o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "96o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "86o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "76o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "66": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "65s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "64s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "63s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "62s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "A5o": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "K5o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q5o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J5o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T5o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "95o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "85o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "75o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "65o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "55": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "54s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "53s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "52s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "A4o": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "K4o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q4o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J4o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T4o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "94o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "84o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "74o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "64o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "54o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "44": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "43s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "42s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "A3o": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "K3o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q3o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J3o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T3o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "93o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "83o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "73o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "63o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "53o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "43o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "33": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "32s": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "A2o": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "K2o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q2o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J2o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T2o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "92o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "82o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "72o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "62o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "52o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "42o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "32o": {
+   "action": "CHECK",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "22": {
+   "action": "ISO_AI",
+   "followup": null,
+   "color": "#22C55E"
+  }
+ }
+}

@@ -1,0 +1,910 @@
+{
+ "id": "bb_hu_vs_mr_15-9",
+ "name": "BB vs SB min raise 15-9",
+ "position": "BB",
+ "spot": "VS_MIN_RAISE",
+ "game": "SPIN_3MAX_HU",
+ "stack_range": "15-9",
+ "tags": [
+  "BB",
+  "HU",
+  "VS SB",
+  "MIN RAISE",
+  "SHORT (<=15 BBS)"
+ ],
+ "actions": {
+  "THREEBET_AI": {
+   "label": "3Bet All-In",
+   "color": "#22C55E",
+   "hotkey": "A"
+  },
+  "CALL": {
+   "label": "Call",
+   "color": "#FFD370",
+   "hotkey": "C"
+  },
+  "THREEBET": {
+   "label": "3Bet (no all-in)",
+   "color": "#7CC8D6",
+   "hotkey": "R",
+   "has_followup": true
+  },
+  "FOLD": {
+   "label": "Fold",
+   "color": "#EDEDED",
+   "hotkey": "F"
+  }
+ },
+ "followup_notes": "3Bet (no all-in): si el SB responde con 4bet all-in, hero paga (vs_4bet_ai = CALL).",
+ "reference_stats": {
+  "vpip_pct": 58.7,
+  "call_pct": 36,
+  "threebet_ai_pct": 21,
+  "threebet_non_ai_pct": 1,
+  "threebet_non_ai": {
+   "vs_4bet_ai": {
+    "call": 100
+   }
+  }
+ },
+ "_check": {
+  "THREEBET": 1.4,
+  "THREEBET_AI": 21.4,
+  "CALL": 35.9,
+  "FOLD": 41.3
+ },
+ "confidence_notes": "Alta si _check coincide con reference_stats.",
+ "hands": {
+  "AA": {
+   "action": "THREEBET",
+   "followup": {
+    "vs_4bet_ai": "CALL"
+   },
+   "color": "#7CC8D6"
+  },
+  "AKs": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "AQs": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "AJs": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "ATs": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "A9s": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "A8s": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "A7s": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "A6s": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "A5s": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "A4s": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "A3s": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "A2s": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "AKo": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "KK": {
+   "action": "THREEBET",
+   "followup": {
+    "vs_4bet_ai": "CALL"
+   },
+   "color": "#7CC8D6"
+  },
+  "KQs": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "KJs": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "KTs": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "K9s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "K8s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "K7s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "K6s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "K5s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "K4s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "K3s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "K2s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "AQo": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "KQo": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "QQ": {
+   "action": "THREEBET",
+   "followup": {
+    "vs_4bet_ai": "CALL"
+   },
+   "color": "#7CC8D6"
+  },
+  "QJs": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "QTs": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q9s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q8s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q7s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q6s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q5s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q4s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q3s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q2s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "AJo": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "KJo": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "QJo": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "JJ": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "JTs": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J9s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J8s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J7s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J6s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J5s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J4s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J3s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J2s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "ATo": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "KTo": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "QTo": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "JTo": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "TT": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "T9s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T8s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T7s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T6s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T5s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T4s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T3s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T2s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "A9o": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "K9o": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q9o": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J9o": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T9o": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "99": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "98s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "97s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "96s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "95s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "94s": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "93s": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "92s": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "A8o": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "K8o": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q8o": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J8o": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T8o": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "98o": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "88": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "87s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "86s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "85s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "84s": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "83s": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "82s": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "A7o": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "K7o": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q7o": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "J7o": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "T7o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "97o": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "87o": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "77": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "76s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "75s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "74s": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "73s": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "72s": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "A6o": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "K6o": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q6o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "J6o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "T6o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "96o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "86o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "76o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "66": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "65s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "64s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "63s": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "62s": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "A5o": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "K5o": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q5o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "J5o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "T5o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "95o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "85o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "75o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "65o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "55": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "54s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "53s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "52s": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "A4o": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "K4o": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q4o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "J4o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "T4o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "94o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "84o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "74o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "64o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "54o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "44": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "43s": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "42s": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "A3o": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "K3o": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q3o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "J3o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "T3o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "93o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "83o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "73o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "63o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "53o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "43o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "33": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "32s": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "A2o": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  },
+  "K2o": {
+   "action": "CALL",
+   "followup": null,
+   "color": "#FFD370"
+  },
+  "Q2o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "J2o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "T2o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "92o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "82o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "72o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "62o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "52o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "42o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "32o": {
+   "action": "FOLD",
+   "followup": null,
+   "color": "#EDEDED"
+  },
+  "22": {
+   "action": "THREEBET_AI",
+   "followup": null,
+   "color": "#22C55E"
+  }
+ }
+}

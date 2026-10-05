@@ -1,0 +1,707 @@
+{
+ "id": "sb_hu_lt5",
+ "name": "SB HU <5",
+ "position": "SB",
+ "spot": "RFI",
+ "game": "SPIN_3MAX_HU",
+ "stack_range": "5-2",
+ "tags": [
+  "SB",
+  "HU",
+  "PUSH/FOLD"
+ ],
+ "source": "Nash push/fold HU chipEV calculado (tools/nash_pushfold_hu.py), simplificado a un rango por tramo",
+ "actions": {
+  "OPEN_SHOVE": {
+   "label": "Open Shove",
+   "color": "#8B0A24",
+   "hotkey": "S"
+  },
+  "FOLD": {
+   "label": "Fold",
+   "color": "#EDEDED",
+   "hotkey": "F"
+  }
+ },
+ "_check": {
+  "shove_pct": 75.6
+ },
+ "hands": {
+  "AA": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "AKs": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "AQs": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "AJs": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "ATs": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "A9s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "A8s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "A7s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "A6s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "A5s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "A4s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "A3s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "A2s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "AKo": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "KK": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "KQs": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "KJs": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "KTs": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "K9s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "K8s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "K7s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "K6s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "K5s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "K4s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "K3s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "K2s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "AQo": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "KQo": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "QQ": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "QJs": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "QTs": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "Q9s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "Q8s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "Q7s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "Q6s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "Q5s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "Q4s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "Q3s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "Q2s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "AJo": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "KJo": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "QJo": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "JJ": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "JTs": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "J9s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "J8s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "J7s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "J6s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "J5s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "J4s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "J3s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "J2s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "ATo": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "KTo": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "QTo": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "JTo": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "TT": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "T9s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "T8s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "T7s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "T6s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "T5s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "T4s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "T3s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "T2s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "A9o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "K9o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "Q9o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "J9o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "T9o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "99": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "98s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "97s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "96s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "95s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "94s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "93s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "92s": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "A8o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "K8o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "Q8o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "J8o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "T8o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "98o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "88": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "87s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "86s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "85s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "84s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "83s": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "82s": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "A7o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "K7o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "Q7o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "J7o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "T7o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "97o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "87o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "77": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "76s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "75s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "74s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "73s": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "72s": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "A6o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "K6o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "Q6o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "J6o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "T6o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "96o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "86o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "76o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "66": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "65s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "64s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "63s": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "62s": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "A5o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "K5o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "Q5o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "J5o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "T5o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "95o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "85o": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "75o": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "65o": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "55": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "54s": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "53s": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "52s": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "A4o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "K4o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "Q4o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "J4o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "T4o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "94o": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "84o": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "74o": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "64o": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "54o": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "44": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "43s": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "42s": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "A3o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "K3o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "Q3o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "J3o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "T3o": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "93o": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "83o": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "73o": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "63o": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "53o": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "43o": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "33": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "32s": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "A2o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "K2o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "Q2o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "J2o": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  },
+  "T2o": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "92o": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "82o": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "72o": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "62o": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "52o": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "42o": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "32o": {
+   "action": "FOLD",
+   "color": "#EDEDED"
+  },
+  "22": {
+   "action": "OPEN_SHOVE",
+   "color": "#8B0A24"
+  }
+ }
+}

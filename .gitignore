@@ -1,0 +1,26 @@
+# Entornos y secretos: cada maquina usa su .env (ver .env.example)
+.env
+
+# Bases de datos SQLite (dev, prod, backups y temporales)
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+npm_cache/
+
+# Sistema
+.DS_Store
+Thumbs.db

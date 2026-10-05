@@ -1,0 +1,1334 @@
+{
+ "id": "btn_3h_lt3.5",
+ "name": "BTN <3.5",
+ "position": "BTN",
+ "spot": "RFI",
+ "game": "SPIN_3MAX",
+ "stack_range": "3.4-0",
+ "stack_min": 0,
+ "stack_max": 3.4,
+ "tags": [
+  "BTN",
+  "3 JUGADORES",
+  "PUSH"
+ ],
+ "source": "captura del solver del usuario (misma fuente que los otros escenarios)",
+ "rule": "exact.max_bb = stack maximo con el que se empuja; exact.min_bb = stack minimo (debajo no se empuja). borderline=true: la mano no se empuja en todo el tramo; no penalizar o puntuar con exact y el stack real.",
+ "actions": {
+  "OPEN_SHOVE": {
+   "label": "Open Shove",
+   "hotkey": "S",
+   "color": "#7CC8D6"
+  },
+  "NO_SHOVE": {
+   "label": "No empujar",
+   "hotkey": "F",
+   "color": "#EDEDED"
+  }
+ },
+ "_check": {
+  "shove_firme_pct": 41.6,
+  "borderline_pct": 3.2
+ },
+ "confidence_notes": "MEDIA: la captura no mostraba titulo. Se asume tramo 3.4 hacia abajo (mismo estilo que 'BTN 8-3.5'). Confirmar titulo.",
+ "hands": {
+  "AA": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "AKs": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "AQs": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "AJs": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "ATs": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "A9s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "A8s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "A7s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "A6s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "A5s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "A4s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "A3s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "A2s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "AKo": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "KK": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "KQs": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "KJs": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "KTs": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "K9s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "K8s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "K7s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "K6s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "K5s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "K4s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "K3s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "K2s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "AQo": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "KQo": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "QQ": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "QJs": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "QTs": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "Q9s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "Q8s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "Q7s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "Q6s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "Q5s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "Q4s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "Q3s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "Q2s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "AJo": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "KJo": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "QJo": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "JJ": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "JTs": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "J9s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "J8s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "J7s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "J6s": {
+   "action": "NO_SHOVE",
+   "borderline": true,
+   "exact": {
+    "max_bb": 1,
+    "min_bb": 0
+   },
+   "color": "#F08460"
+  },
+  "J5s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "J4s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "J3s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "J2s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "ATo": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "KTo": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "QTo": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "JTo": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "TT": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "T9s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "T8s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "T7s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "T6s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "T5s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "T4s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "T3s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "T2s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "A9o": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "K9o": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "Q9o": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "J9o": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "T9o": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "99": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "98s": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "97s": {
+   "action": "OPEN_SHOVE",
+   "borderline": true,
+   "exact": {
+    "max_bb": 2,
+    "min_bb": 0
+   },
+   "color": "#F7CD6E"
+  },
+  "96s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "95s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "94s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "93s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "92s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "A8o": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "K8o": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "Q8o": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "J8o": {
+   "action": "OPEN_SHOVE",
+   "borderline": true,
+   "exact": {
+    "max_bb": 2.6,
+    "min_bb": 0
+   },
+   "color": "#CDD096"
+  },
+  "T8o": {
+   "action": "NO_SHOVE",
+   "borderline": true,
+   "exact": {
+    "max_bb": 1.2,
+    "min_bb": 0
+   },
+   "color": "#F2915E"
+  },
+  "98o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "88": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "87s": {
+   "action": "NO_SHOVE",
+   "borderline": true,
+   "exact": {
+    "max_bb": 1.6,
+    "min_bb": 0
+   },
+   "color": "#F5AB5D"
+  },
+  "86s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "85s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "84s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "83s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "82s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "A7o": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "K7o": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "Q7o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "J7o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "T7o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "97o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "87o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "77": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "76s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "75s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "74s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "73s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "72s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "A6o": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "K6o": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "Q6o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "J6o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "T6o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "96o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "86o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "76o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "66": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "65s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "64s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "63s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "62s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "A5o": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "K5o": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "Q5o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "J5o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "T5o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "95o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "85o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "75o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "65o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "55": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "54s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "53s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "52s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "A4o": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "K4o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "Q4o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "J4o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "T4o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "94o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "84o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "74o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "64o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "54o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "44": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "43s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "42s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "A3o": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "K3o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "Q3o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "J3o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "T3o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "93o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "83o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "73o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "63o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "53o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "43o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "33": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "32s": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "A2o": {
+   "action": "OPEN_SHOVE",
+   "borderline": false,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 0
+   },
+   "color": "#7CC8D6"
+  },
+  "K2o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "Q2o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "J2o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "T2o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "92o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "82o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "72o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "62o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "52o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "42o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "32o": {
+   "action": "NO_SHOVE",
+   "borderline": false,
+   "exact": null,
+   "color": "#EDEDED"
+  },
+  "22": {
+   "action": "NO_SHOVE",
+   "borderline": true,
+   "exact": {
+    "max_bb": 3.4,
+    "min_bb": 3
+   },
+   "color": "#7CC8D6"
+  }
+ },
+ "color_rule": "hands[h].color ya viene calculado. Celeste = se empuja en TODO el tramo (max_bb = tope). Si no, escala por (max_bb - stack_min)/(stack_max - stack_min): rojo = poco tramo, amarillo = medio, verde = casi todo. Celda vacia = gris.",
+ "color_scale": [
+  {
+   "fraccion": 0,
+   "color": "#E8545A"
+  },
+  {
+   "fraccion": 0.25,
+   "color": "#EE7B62"
+  },
+  {
+   "fraccion": 0.45,
+   "color": "#F5A55A"
+  },
+  {
+   "fraccion": 0.6,
+   "color": "#F7D070"
+  },
+  {
+   "fraccion": 0.78,
+   "color": "#C9D09A"
+  },
+  {
+   "fraccion": 0.9,
+   "color": "#A9CBA0"
+  },
+  {
+   "fraccion": 1.0,
+   "color": "#7CC8D6",
+   "nota": "tramo completo"
+  }
+ ]
+}

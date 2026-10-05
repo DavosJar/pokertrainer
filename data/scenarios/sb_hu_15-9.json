@@ -1,0 +1,949 @@
+{
+ "id": "sb_hu_15-9",
+ "name": "SB HU 15-9",
+ "position": "SB",
+ "stack_range": "15-9",
+ "spot": "RFI",
+ "game": "SPIN_3MAX_HU",
+ "tags": [
+  "SB",
+  "HU",
+  "EXPLOTADOR",
+  "SIMETRICO",
+  "SHORT (<=15 BBS)"
+ ],
+ "reference_stats": {
+  "vpip_pct": 100,
+  "limp_pct": 75,
+  "or_pct": 6,
+  "open_shove_pct": 19,
+  "limp": {
+   "vs_raise": {
+    "fold": 79,
+    "call": 21
+   },
+   "vs_raise_ai": {
+    "fold": 100
+   }
+  },
+  "or": {
+   "vs_3bet": {
+    "all_in": 100
+   },
+   "vs_3bet_ai": {
+    "call": 100
+   }
+  }
+ },
+ "confidence_notes": "Alta: Open Shove (19.0%), OR (6.2%) y Limp Call->Fold (21.0%) coinciden con la captura.",
+ "_check": {
+  "open_shove_pct": 19.0,
+  "or_pct": 6.2,
+  "limp_pct": 74.8,
+  "limp_call_fold_pct_del_limp": 21.0
+ },
+ "actions": {
+  "OPEN_SHOVE": {
+   "label": "Open Shove",
+   "color": "#8B0A24",
+   "hotkey": "S"
+  },
+  "OR": {
+   "label": "OR (open raise)",
+   "color": "#E85A5A",
+   "hotkey": "R",
+   "has_followup": true
+  },
+  "LIMP": {
+   "label": "Limp",
+   "color": "#F5A623",
+   "hotkey": "L",
+   "has_followup": true
+  }
+ },
+ "followups": {
+  "4BET_AI": {
+   "label": "4Bet AI -> Call AI",
+   "color": "#7CC8D6",
+   "applies_to": "OR",
+   "vs_3bet": "ALL_IN",
+   "vs_3bet_ai": "CALL"
+  },
+  "FOLD_FOLD": {
+   "label": "Fold -> Fold",
+   "color": "#E85A5A",
+   "applies_to": "OR",
+   "vs_3bet": "FOLD",
+   "vs_3bet_ai": "FOLD"
+  },
+  "CALL_FOLD": {
+   "label": "Call -> Fold",
+   "color": "#9B5CF6",
+   "applies_to": "OR",
+   "vs_3bet": "CALL",
+   "vs_3bet_ai": "FOLD"
+  },
+  "LIMP_CALL_FOLD": {
+   "label": "Call -> Fold",
+   "color": "#F5A623",
+   "applies_to": "LIMP",
+   "vs_raise": "CALL",
+   "vs_raise_ai": "FOLD"
+  },
+  "LIMP_FOLD_FOLD": {
+   "label": "Fold -> Fold",
+   "color": "#FFD370",
+   "applies_to": "LIMP",
+   "vs_raise": "FOLD",
+   "vs_raise_ai": "FOLD"
+  }
+ },
+ "followup_notes": "Orden de la flecha: [vs primera respuesta] -> [vs all-in]. Limp: vs raise del BB (Rol) -> vs raise all-in (Rol AI). OR: vs 3bet -> vs 3bet all-in.",
+ "hands": {
+  "AA": {
+   "action": "OR",
+   "followup": "4BET_AI",
+   "frequency": 100
+  },
+  "AKs": {
+   "action": "OR",
+   "followup": "4BET_AI",
+   "frequency": 100
+  },
+  "AQs": {
+   "action": "OR",
+   "followup": "4BET_AI",
+   "frequency": 100
+  },
+  "AJs": {
+   "action": "OR",
+   "followup": "4BET_AI",
+   "frequency": 100
+  },
+  "ATs": {
+   "action": "OR",
+   "followup": "4BET_AI",
+   "frequency": 100
+  },
+  "A9s": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "A8s": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "A7s": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "A6s": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "A5s": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "A4s": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "A3s": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "A2s": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "AKo": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "KK": {
+   "action": "OR",
+   "followup": "4BET_AI",
+   "frequency": 100
+  },
+  "KQs": {
+   "action": "OR",
+   "followup": "4BET_AI",
+   "frequency": 100
+  },
+  "KJs": {
+   "action": "OR",
+   "followup": "4BET_AI",
+   "frequency": 100
+  },
+  "KTs": {
+   "action": "OR",
+   "followup": "4BET_AI",
+   "frequency": 100
+  },
+  "K9s": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "K8s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "K7s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "K6s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "K5s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "K4s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "K3s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "K2s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "AQo": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "KQo": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "QQ": {
+   "action": "OR",
+   "followup": "4BET_AI",
+   "frequency": 100
+  },
+  "QJs": {
+   "action": "OR",
+   "followup": "4BET_AI",
+   "frequency": 100
+  },
+  "QTs": {
+   "action": "OR",
+   "followup": "4BET_AI",
+   "frequency": 100
+  },
+  "Q9s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "Q8s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "Q7s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "Q6s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "Q5s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "Q4s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "Q3s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "Q2s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "AJo": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "KJo": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "QJo": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "JJ": {
+   "action": "OR",
+   "followup": "4BET_AI",
+   "frequency": 100
+  },
+  "JTs": {
+   "action": "OR",
+   "followup": "4BET_AI",
+   "frequency": 100
+  },
+  "J9s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "J8s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "J7s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "J6s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "J5s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "J4s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "J3s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "J2s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "ATo": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "KTo": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "QTo": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "JTo": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "TT": {
+   "action": "OR",
+   "followup": "4BET_AI",
+   "frequency": 100
+  },
+  "T9s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "T8s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "T7s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "T6s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "T5s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "T4s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "T3s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "T2s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "A9o": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "K9o": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "Q9o": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "J9o": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "T9o": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "99": {
+   "action": "OR",
+   "followup": "4BET_AI",
+   "frequency": 100
+  },
+  "98s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "97s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "96s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "95s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "94s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "93s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "92s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "A8o": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "K8o": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "Q8o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "J8o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "T8o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "98o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "88": {
+   "action": "OR",
+   "followup": "4BET_AI",
+   "frequency": 100
+  },
+  "87s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "86s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "85s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "84s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "83s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "82s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "A7o": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "K7o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "Q7o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "J7o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "T7o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "97o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "87o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "77": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "76s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "75s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "74s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "73s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "72s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "A6o": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "K6o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "Q6o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "J6o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "T6o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "96o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "86o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "76o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "66": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "65s": {
+   "action": "LIMP",
+   "followup": "LIMP_CALL_FOLD",
+   "frequency": 100
+  },
+  "64s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "63s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "62s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "A5o": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "K5o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "Q5o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "J5o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "T5o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "95o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "85o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "75o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "65o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "55": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "54s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "53s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "52s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "A4o": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "K4o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "Q4o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "J4o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "T4o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "94o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "84o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "74o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "64o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "54o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "44": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "43s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "42s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "A3o": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "K3o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "Q3o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "J3o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "T3o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "93o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "83o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "73o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "63o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "53o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "43o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "33": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "32s": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "A2o": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  },
+  "K2o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "Q2o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "J2o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "T2o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "92o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "82o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "72o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "62o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "52o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "42o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "32o": {
+   "action": "LIMP",
+   "followup": "LIMP_FOLD_FOLD",
+   "frequency": 100
+  },
+  "22": {
+   "action": "OPEN_SHOVE",
+   "followup": null,
+   "frequency": 100
+  }
+ }
+}

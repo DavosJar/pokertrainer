@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mesa - mockup</title>
+<style>
+  :root{--bg:#0e1116;--felt:#14452f;--edge:#0c2c1f;--ink:#e8ecef;--muted:#8a96a3;--gold:#f2c14e;--card-w:clamp(84px,13vw,132px)}
+  *{box-sizing:border-box;margin:0}
+  body{background:var(--bg);color:var(--ink);font-family:system-ui,sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center;gap:16px;padding:20px}
+  .spot{align-self:flex-start;color:var(--muted);font-size:14px}
+
+  /* Grilla 3x3. Fila 1: rivales y POT arriba. Fila 2: fichas. Fila 3: hero. */
+  .table{width:min(1000px,100%);aspect-ratio:16/10;background:var(--felt);border:10px solid var(--edge);border-radius:999px;
+    display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:1fr .9fr 1.5fr;justify-items:center;align-items:center;padding:2% 6%}
+  .seat{display:flex;flex-direction:column;align-items:center;gap:6px}
+  .sb{grid-column:1;grid-row:1} .bb{grid-column:3;grid-row:1}
+  .potcell{grid-column:2;grid-row:1}
+  .bet-sb{grid-column:1;grid-row:2} .bet-bb{grid-column:3;grid-row:2} .bet-hero{grid-column:2;grid-row:2}
+  .hero{grid-column:2;grid-row:3}
+
+  .name{font-weight:700;font-size:15px} .stack{color:var(--gold);font-weight:700;font-size:15px}
+  .pot{background:#0000004d;border:1px solid var(--gold);color:var(--gold);border-radius:999px;padding:5px 18px;font-weight:700;font-size:18px}
+
+  /* Ficha circular */
+  .chip{width:78px;height:78px;border-radius:50%;display:grid;place-content:center;text-align:center;line-height:1.15;
+    background:#000000559;border:3px dashed var(--gold);color:var(--gold);font-weight:800;font-size:16px}
+  .chip small{display:block;font-size:11px;letter-spacing:.5px}
+  .chip:empty{visibility:hidden}
+  .chip.allin{border-style:solid;color:#fff;background:#8b0a24}
+
+  .cards{display:flex}
+  .card{width:var(--card-w);aspect-ratio:5/7;background:#fff;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:800;line-height:1;box-shadow:0 4px 10px #0006}
+  .card .r{font-size:calc(var(--card-w)*.46)} .card .s{font-size:calc(var(--card-w)*.4)}
+  .card.red{color:#c8102e} .card.black{color:#111} .cards .card+.card{margin-left:-8%}
+  .back{width:calc(var(--card-w)*.42);aspect-ratio:5/7;border-radius:6px;border:2px solid #fff;
+    background:repeating-linear-gradient(45deg,#1d3b8b,#1d3b8b 4px,#16306f 4px,#16306f 8px)}
+  .back+.back{margin-left:-30%} .back.out{opacity:.25}
+  .dealer{background:#fff;color:#000;border-radius:50%;width:22px;height:22px;display:inline-grid;place-items:center;font-size:12px;font-weight:800}
+
+  .actions{display:flex;gap:14px;width:min(1000px,100%)}
+  .btn{flex:1;padding:22px 10px;border:0;border-radius:12px;font-size:20px;font-weight:700;color:#fff;cursor:pointer}
+  .btn small{display:block;font-size:12px;opacity:.7;margin-top:4px}
+  .shove,.allin{background:#8b0a24} .or{background:#e85a5a} .fold{background:#ececec;color:#333} .call{background:#3b6ea5} .next{background:#2a3340}
+  #fb{min-height:28px;font-size:18px;font-weight:700} .ok{color:#3ddc97} .bad{color:#ff6b6b}
+</style>
+</head>
+<body>
+<div class="spot" id="spot"></div>
+
+<div class="table">
+  <div class="seat sb"><div class="cards" id="sb-c"><div class="back"></div><div class="back"></div></div><div class="name">SB</div><div class="stack" id="sb-stack"></div></div>
+  <div class="seat bb"><div class="cards" id="bb-c"><div class="back"></div><div class="back"></div></div><div class="name">BB</div><div class="stack" id="bb-stack"></div></div>
+  <div class="potcell"><div class="pot" id="pot"></div></div>
+  <div class="chip bet-sb" id="sb-bet"></div>
+  <div class="chip bet-hero" id="hero-bet"></div>
+  <div class="chip bet-bb" id="bb-bet"></div>
+  <div class="seat hero">
+    <div class="cards" id="hero-cards"></div>
+    <div class="name"><span id="hero-pos"></span> <span class="dealer" id="hero-d">D</span> <span class="stack" id="hero-stack"></span></div>
+  </div>
+</div>
+
+<div id="fb"></div>
+<div class="actions" id="actions"></div>
+
+<script>
+const SUIT={s:"\u2660",h:"\u2665",d:"\u2666",c:"\u2663"};
+const CONFIG={blinds:{SB:0.5,BB:1},minRaise:2,threeBet:4};      // en BB, configurable
+const fmt=n=>(Number.isInteger(n)?n:n.toFixed(1));
+const $=id=>document.getElementById(id);
+
+function parseRange(r){ if(r.endsWith("+")){const lo=parseFloat(r);return [lo,lo+10];} const [a,b]=r.split("-").map(parseFloat);return [Math.min(a,b),Math.max(a,b)]; }
+function randomStack(r){ const [lo,hi]=parseRange(r); return lo+Math.floor(Math.random()*((hi-lo)/0.5+1))*0.5; }
+function buildState(scn,cards){
+  const b=CONFIG.blinds;
+  return {scenarioName:scn.name,spot:scn.spot,heroPos:scn.position,heroCards:cards,
+          eff:randomStack(scn.stack_range),bets:{SB:b.SB,BB:b.BB,hero:null},dead:0,folded:{SB:false,BB:false}};
+}
+
+/* RENDER: stacks y pot se DERIVAN de eff, bets y dead. Nunca se escriben a mano. */
+function chipHTML(amt,eff){ if(amt==null) return ""; return amt>=eff?`<small>ALL-IN</small>${fmt(amt)} BB`:`${fmt(amt)} BB`; }
+function render(st){
+  const eff=st.eff,bt=st.bets;
+  $("spot").textContent=st.scenarioName+" \u00b7 "+st.spot;
+  $("hero-pos").textContent=st.heroPos; $("hero-d").style.display=st.heroPos==="BTN"?"inline-grid":"none";
+  $("sb-stack").textContent=fmt(eff-(bt.SB||0))+" BB"; $("bb-stack").textContent=fmt(eff-(bt.BB||0))+" BB";
+  $("hero-stack").textContent=fmt(eff-(bt.hero||0))+" BB";
+  for(const k of ["SB","BB","hero"]){const el=$((k==="hero"?"hero":k.toLowerCase())+"-bet");el.innerHTML=chipHTML(bt[k],eff);el.classList.toggle("allin",bt[k]!=null&&bt[k]>=eff);}
+  $("sb-c").children[0].parentElement.classList.toggle("out",false);
+  for(const k of ["SB","BB"]) [...$(k.toLowerCase()+"-c").children].forEach(c=>c.classList.toggle("out",st.folded[k]));
+  $("pot").textContent="Pot "+fmt((bt.SB||0)+(bt.BB||0)+(bt.hero||0)+st.dead)+" BB";
+  $("hero-cards").innerHTML=st.heroCards.map(c=>{const red=c[1]==="h"||c[1]==="d";
+    return `<div class="card ${red?"red":"black"}"><span class="r">${c[0]}</span><span class="s">${SUIT[c[1]]}</span></div>`}).join("");
+}
+
+/* FLUJO: HERO -> (si OR correcto) VILLANO 3BET al azar -> HERO2 -> FIN */
+let S,phase,kind,villain,expected;
+const LBL={OPEN_SHOVE:"Open Shove",OR:"OR",FOLD:"Fold",CALL:"Call",ALL_IN:"All-in"};
+function setButtons(list){
+  $("actions").innerHTML=list.map(b=>`<button class="btn ${b.cls}" data-k="${b.id}">${b.label}<small>[${b.key}]</small></button>`).join("");
+  $("actions").querySelectorAll("button").forEach(el=>el.onclick=()=>act(el.dataset.k));
+  setButtons.keys=Object.fromEntries(list.map(b=>[b.key.toLowerCase(),b.id]));
+}
+function fb(ok,txt){$("fb").className=ok==null?"":(ok?"ok":"bad");$("fb").textContent=txt||"";}
+function end(ok,txt){phase="end";fb(ok,txt);setButtons([{id:"NEXT",label:"Siguiente",key:"Espacio",cls:"next"}]);setButtons.keys[" "]="NEXT";}
+
+function newHand(){
+  expected={action:"OR",followup:{vs_3bet:"CALL",vs_3bet_ai:"FOLD"}};   // DEMO: en la app sale del JSON
+  S=buildState({name:"BTN 15-9",position:"BTN",spot:"RFI",stack_range:"15-9"},["Kc","5c"]);   // DEMO
+  phase="hero";fb(null);render(S);
+  setButtons([{id:"OPEN_SHOVE",label:"Open Shove",key:"S",cls:"shove"},{id:"OR",label:"OR 2 BB",key:"R",cls:"or"},{id:"FOLD",label:"Fold",key:"F",cls:"fold"}]);
+}
+function villainResponds(){
+  villain=Math.random()<.5?"SB":"BB"; const other=villain==="SB"?"BB":"SB";
+  S.dead+=S.bets[other]; S.bets[other]=null; S.folded[other]=true;          // el otro tira su ciega
+  kind=Math.random()<.5?"normal":"ai";
+  S.bets[villain]=kind==="ai"?S.eff:CONFIG.threeBet; phase="vs"; render(S);
+  const base=[{id:"FOLD",label:"Fold",key:"F",cls:"fold"},{id:"CALL",label:"Call",key:"C",cls:"call"}];
+  setButtons(kind==="ai"?base:[...base,{id:"ALL_IN",label:"All-in",key:"A",cls:"allin"}]);
+}
+function act(a){
+  if(a==="NEXT") return newHand();
+  if(phase==="hero"){
+    if(a==="OPEN_SHOVE") S.bets.hero=S.eff;
+    if(a==="OR") S.bets.hero=CONFIG.minRaise;
+    if(a==="FOLD") S.bets.hero=null;
+    render(S);
+    if(a!==expected.action) return end(false,"Incorrecto. Era: "+LBL[expected.action]);
+    return a==="OR"?villainResponds():end(true,"Correcto");
+  }
+  if(phase==="vs"){
+    const want=expected.followup[kind==="ai"?"vs_3bet_ai":"vs_3bet"];
+    if(a==="FOLD"){S.dead+=S.bets.hero;S.bets.hero=null;}
+    if(a==="CALL") S.bets.hero=S.bets[villain];
+    if(a==="ALL_IN") S.bets.hero=S.eff;
+    render(S);
+    return a===want?end(true,"Correcto"):end(false,"Incorrecto. Era: "+LBL[want]);
+  }
+}
+document.addEventListener("keydown",e=>{const id=setButtons.keys[e.key.toLowerCase()];if(id){e.preventDefault();act(id);}});
+newHand();   /* DEMO: el agente reemplaza newHand por el selector real de manos y escenarios */
+</script>
+</body>
+</html>
